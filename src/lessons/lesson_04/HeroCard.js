@@ -2,6 +2,7 @@ import React from 'react';
 import "./heroCard.css";
 
 const HeroCard = ({ hero }) => {
+  
   return (
     <div className={`card ${hero.isDark ? "dark" : "light"}`}>
       <h4>{hero.name}</h4>
@@ -15,7 +16,6 @@ const HeroCard = ({ hero }) => {
             className="lightsaber-color"
             style={{ backgroundColor: color }}
           ></span>
-          
         ))}
       </p>
     </div>
